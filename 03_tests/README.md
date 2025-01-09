@@ -32,8 +32,8 @@ Pour créer un test, on utilise la méthode `test` de l'objet global
 - une fonction de rappel.
 
 Dans le corps de la fonction de rappel, on utilise la fonction `expect`
-pour spécifier la valeur actuelle, et la méthode `toBe` pour spécifier
-la valeur attendue.
+pour spécifier la valeur actuelle, et la méthode `toEqual` pour
+spécifier la valeur attendue.
 
 ```js
 // math_test.js
@@ -44,6 +44,6 @@ import { square } from "./square.js";
 Deno.test("Calcule le carré", () => {
     const actual = square(2);
     const expected = 4;
-    expect(actual).toBe(expected);
+    expect(actual).toEqual(expected);
 });
 ```
