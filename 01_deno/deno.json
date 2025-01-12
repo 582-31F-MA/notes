@@ -1,5 +1,6 @@
 {
     "compilerOptions": {
+        "lib": ["ESNext", "dom", "deno.ns"],
         "strict": true,
         "noUnusedLocals": true,
         "allowUnreachableCode": false,
