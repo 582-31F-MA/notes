@@ -262,6 +262,10 @@ Par exemple :
 
 ```js
 const account = new Account(0);
-expect(account.withdraw(5)).toThrow(InsufficientFundsError); // pour tester un lancement
+expect(() => account.withdraw(5)).toThrow(InsufficientFundsError); // pour tester un lancement
 expect(account.withdraw(5)).toBeInstanceOf(InsufficientFundsError); // pour tester une valeur de retour
 ```
+
+Vous remarquerez que dans le cas d'une fonction qui lance une exception,
+celle-ci ne peut pas être appelée directement dans le test. Plutôt, on
+passera comme argument à `expect` une fonction de rappel.
