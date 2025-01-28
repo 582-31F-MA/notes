@@ -36,7 +36,7 @@ class Temperature {
 }
 ```
 
-Un bon example de propriété statique est une méthode qui permet de créer
+Un bon exemple de propriété statique est une méthode qui permet de créer
 un nouvel instance de `Temperature` à partir d'une valeur en degrés
 Fahrenheit.
 
